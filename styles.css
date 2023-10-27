@@ -1,0 +1,92 @@
+ul{ 
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* min-height: 70px; */
+    padding: 20px;
+}
+header a{
+    color: yellowgreen;
+    text-decoration:none ;
+    /* text-transform: uppercase; */
+    /* font-size: 16px; */
+}
+header li{
+    display: inline-flex;
+    justify-content: left;
+    padding: 0 20px 0 20px  ;
+}
+header nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+body {
+
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 35%; /* Adjust the width of columns as needed */
+    margin: 10px;
+    text-align: center;
+    /* width: 150px; /* Set your desired width */
+    /* height: 150px; Set your desired height */ 
+
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column p {
+    font-size: 14px; /* Adjust the font size of text as needed */
+}
+.Experience{
+    /* display: flex; */
+    justify-content: space-between;
+    /* height: 100vh; */
+}
+
+.left-section, .middle-section, .right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    boxborder-box:-sizing;
+} 
+
+.left-section{
+    justify-content: left;
+}
+.right-section{
+    justify-content: right;
+}
+
+
+
+
+
+
+
+
