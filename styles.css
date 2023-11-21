@@ -3,14 +3,13 @@ ul{
     padding: 0;
 }
 header{
-    /* min-height: 70px; */
     padding: 20px;
 }
 header a{
-    color: yellowgreen;
+    color: black;
     text-decoration:none ;
-    /* text-transform: uppercase; */
-    /* font-size: 16px; */
+    text-transform: uppercase;
+    font-size: 14px;
 }
 header li{
     display: inline-flex;
@@ -20,7 +19,7 @@ header li{
 header nav{
     display: flex;
     justify-content: right;
-    margin-top: 10px;
+
 }
 body {
 
@@ -33,12 +32,15 @@ body {
     color: var(--text-color-light);
     transition: background-color 0.3s ease, color 0.3s ease;
     width: 100%;
-}
+    margin: 0;
+    padding: 0;
 
+}
 body.dark-mode {
     background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -49,23 +51,20 @@ body.dark-mode {
     flex: 0 0 35%; /* Adjust the width of columns as needed */
     margin: 10px;
     text-align: center;
-    /* width: 150px; /* Set your desired width */
-    /* height: 150px; Set your desired height */ 
 
 }
 
 .column img {
-    width: 100%;
-    height: auto;
+    max-width: 250px;
 }
 
 .column p {
     font-size: 14px; /* Adjust the font size of text as needed */
 }
 .Experience{
-    /* display: flex; */
+    
     justify-content: space-between;
-    /* height: 100vh; */
+    
 }
 
 .left-section, .middle-section, .right-section {
@@ -73,7 +72,7 @@ body.dark-mode {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
-    boxborder-box:-sizing;
+
 } 
 
 .left-section{
@@ -83,10 +82,19 @@ body.dark-mode {
     justify-content: right;
 }
 
+/* Media query for screens smaller than 600 pixels */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 
+    header li {
+        display: block; /* Stack navigation links vertically on smaller screens */
+        padding: 10px 0;
+        text-align: center;
+    }
 
-
-
-
-
-
+    header nav {
+        justify-content: right; /* Center navigation on smaller screens */
+    }
+}

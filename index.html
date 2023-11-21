@@ -10,38 +10,34 @@
     <header>
       
         <!-- <div class="nav">    -->
-            <div><span class="highlight">Dev</span>
-          <nav>
+           <section>
+          <span class="highlight">Dev
+            <nav>
             <ul>
-              <li class="current"><a href="index.html">Projects</a></li>
-              <li><a href="about.html"> Resume</a></li>
-              <li><a href="service.html">Contacts</a></li>
+              <li class="current"><a href="#projects">Projects</a></li>
+              <li><a href="#resume"> Resume</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
+            </span>
           
         <button id="theme-toggle">Toggle Dark Mode</button>
-
-      <script>
-          const themeToggle = document.getElementById('theme-toggle');
-      
-          themeToggle.addEventListener('click', () => {
-              document.body.classList.toggle('dark-mode');
-              // Save user preference to local storage if needed
-          });
-      </script>
+      </section>
+     
       </nav>
-    </div>
+    
+    
     
         <!-- </div> -->
       </header>
       <head>
         
-      <section>
+      <section >
         <div>Hey i'm</div>
-        <h1> BASIL IKPE .M</h1>
+        <h1 class="name"> BASIL IKPE .M</h1>
         <div>
            I'm an Experienced Product Manager who lives in Lagos Nigeria. 
            I'm also a UX/UI Researcher, QA Test Analyst, Product Marketing Strategist,
-           Developing FRD,OKRs, Agile Medology,Single and Multitalented Architecture Application;SaaS, Payment link & Fintech App.
+           Developing FRD,OKRs, Agile Medology,Single and Multitalented Architecture Application, SaaS, Payment link & Fintech App.
         </div>
 
       </section>
@@ -51,7 +47,7 @@
     <body>
   
         <div>Say Hi, </div>
-      <section>
+      <section id="projects">
         Featured Projects
         
         <div class="container">
@@ -109,9 +105,9 @@
       </section>
       <hr>
 
-      <section class="Experience">
+      <section class="Experience" id="resume">
           <div>
-            <div class="left-section" >Experience
+            <div class="left-section" >
             
               <span class="middle-section">Product Manager 
               Snapnet Solutions (B2C/B2B) (IT Industry)</span>
@@ -120,7 +116,7 @@
           </div>
 
         <div>
-          <div class="left-section" >Experience
+          <div class="left-section" >
 
           <span class="middle-section">
           Product Strategist
@@ -130,6 +126,9 @@
         </div>
 
         <div>
+          <div class="left-section" >
+
+           
           <div class="middle-section">
           Product Marketing Head
           Airopay (B2B) (Fintech Industry)
@@ -138,6 +137,9 @@
         </div>
 
         <div>
+          <div class="left-section" >
+
+           
           <div class="middle-section">
             Digital Lead Strategist
             AVA (Recruitment/IT Industry)
@@ -146,6 +148,7 @@
         </div>
 
         <div>
+          <div class="left-section" >
           <div class="middle-section">
             Marketing Strategist 
             Headwaypoint.com (Hospitality Industry)
@@ -154,6 +157,7 @@
        </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
           Sales Media Strategist 
           Mayflora Consulting (Finance Industry)
@@ -162,6 +166,7 @@
       </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
           Online Merchant 
           Jumia/Konga (Ecommerce Industry)
@@ -170,7 +175,9 @@
       </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
+
           Social Media Assistant and Guest Relations Executive
           Transcorp Hotels, Calabar, Cross River. (Hospitality Industry)
           <span class="right-section"> February 2012 - March 2013 </span>
@@ -178,6 +185,7 @@
       </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
           Online Manager 
           Havenpharmacy.com.ng
@@ -186,6 +194,7 @@
       </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
           Sales Manager 
           Printpanda.ng
@@ -194,6 +203,7 @@
       </div>
 
       <div>
+        <div class="left-section" >
        <div class="middle-section">
          English/Literature Teacher  
           Briggs Gate College
@@ -203,6 +213,7 @@
      </div>
 
       <div>
+        <div class="left-section" >
         <div class="middle-section">
           Guest Relations Executive 
           Transcorp Hotels, Calabar, Cross River.
@@ -213,12 +224,28 @@
       </section>
 
 
-      <div class="Experience"></div>
-        <div class="left-section">Education</div>
-         <div><div class="middle-section"> Ebonyi State University <span class="right-section">2006-2010</span> </div>B.Sc. in Mass Communication</div>
+      <div class="Experience">
+        <h1 class="left-section">Education</h1>
+         <div><div class="middle-section"> Ebonyi State University <span class="right-section">2006-2010</span> </div></div>
+         <div><div class="middle-section">B.Sc. in Mass Communication</div>
         <div> <div class="middle-section">Product Analytics Micro-Certification (PAC™)</div></div>
          <div class="middle-section">Product-Led Growth Micro Certification (PLGC™) <span>In Progress</span></div>
-      
-    
+        </div>
+
+          <Section id="contacts" class="left-section"><H1> CONTACT ME </H1>
+         <div class="Contacts" >
+          <p class="middle-section">Mobile: 08060404467</p>
+          <p class="middle-section"> E-mails: basil_ikpe@yahoo.com, basilikpe654@gmail.com</p>
+         </div>
+        </Section>
+
+         <script>
+          const themeToggle = document.getElementById('theme-toggle');
+          themeToggle.addEventListener('click', () => {
+              document.body.classList.toggle('dark-mode');
+          });
+      </script>   
 </body>
 </html>
+
+
