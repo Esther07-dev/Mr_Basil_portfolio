@@ -66,20 +66,9 @@ body.dark-mode {
     justify-content: space-between;
     
 }
-
-.left-section, .middle-section, .right-section {
+.ex-container{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-
-} 
-
-.left-section{
-    justify-content: left;
-}
-.right-section{
-    justify-content: right;
 }
 
 /* Media query for screens smaller than 600 pixels */
